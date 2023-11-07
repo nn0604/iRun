@@ -59,6 +59,17 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+
+    signingConfigs {
+        debug {
+            storeFile file("../app/keystore/debug.keystore")
+        }
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
 }
 
 flutter {
